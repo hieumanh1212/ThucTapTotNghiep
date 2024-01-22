@@ -200,7 +200,7 @@
                     <div class="col-xl-12">
                         <div class="tp-section-title-wrapper-2 text-center mb-50">
                         <span class="tp-section-title-pre-2">
-                           Cửa hàng theo thể loại
+                           
                            <svg width="82" height="22" viewBox="0 0 82 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M81 14.5798C0.890564 -8.05914 -5.81154 0.0503902 5.00322 21" stroke="currentColor" stroke-opacity="0.3" stroke-width="2" stroke-miterlimit="3.8637" stroke-linecap="round"/>
                            </svg>
@@ -247,7 +247,7 @@
                     <div class="col-xl-12">
                         <div class="tp-section-title-wrapper-2 text-center mb-35">
                         <span class="tp-section-title-pre-2">
-                           Tất cả sản phẩm
+                           
                            <svg width="82" height="22" viewBox="0 0 82 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M81 14.5798C0.890564 -8.05914 -5.81154 0.0503902 5.00322 21" stroke="currentColor" stroke-opacity="0.3" stroke-width="2" stroke-miterlimit="3.8637" stroke-linecap="round"/>
                            </svg>
@@ -265,7 +265,7 @@
                                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                             <div class="tp-product-item-2 mb-40">
                                                 <div class="tp-product-thumb-2 p-relative z-index-1 fix w-img">
-                                                    <a href="product-details.html">
+                                                    <a href="{{url('/product-detail/'.$product->ma_san_pham)}}">
                                                         <img src="{{url("IMG_SanPham/". $product->anh_dai_dien)}}" alt="" style="width: 336px; height: 357px;">
                                                     </a>
                                                 </div>
@@ -284,8 +284,8 @@
                                                         <span><i class="fa-solid fa-star"></i></span>
                                                     </div>
                                                     <div class="tp-product-price-wrapper-2">
-                                                        <span class="tp-product-price-2 new-price">{{$product->don_gia_ban}}đ</span>
-                                                        <!-- <span class="tp-product-price-2 old-price">{{ number_format($product->don_gia_ban, 0, ',', '.') }} đ</span> -->
+                                                        <span class="tp-product-price-2 new-price">{{ number_format($product->don_gia_ban-$product->giam_gia, 0, ',', '.') }} VNĐ</span>
+                                                        <span class="tp-product-price-2 old-price">{{ number_format($product->don_gia_ban, 0, ',', '.') }} VNĐ</span>
                                                     </div>
                                                 </div>
                                             </div>

@@ -857,8 +857,14 @@
                                                 <span><i class="fa-solid fa-star"></i></span>
                                              </div>
                                              <div class="tp-product-price-wrapper-2">
-                                                <span class="tp-product-price-2 new-price">${response.data[i].don_gia_ban}</span>
-                                                
+                                            
+                                                <span class="tp-product-price-2 new-price">
+                                                    ${parseFloat(response.data[i].don_gia_ban - response.data[i].giam_gia).toLocaleString('vi-VN')} VNĐ
+                                                </span>
+                                                <span class="tp-product-price-2 old-price">
+                                                    ${parseFloat(response.data[i].don_gia_ban).toLocaleString('vi-VN')} VNĐ
+                                                </span>
+                       
                                              </div>
                                           </div>
                                        </div>
