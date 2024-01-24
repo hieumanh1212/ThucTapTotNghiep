@@ -118,8 +118,9 @@
 
                                 <!-- price -->
                                 <div class="tp-product-details-price-wrapper mb-20">
-                                    <span class="tp-product-details-price new-price">{{$product->don_gia_ban}}đ</span>
-                                    <!-- <span class="tp-product-details-price new-price">{{ number_format($product->don_gia_ban-$product->giam_gia, 0, ',', '.') }}đ</span> -->
+                                    <!-- <span class="tp-product-details-price new-price">{{$product->don_gia_ban}}đ</span> -->
+                                    <span class="tp-product-details-price new-price">{{ number_format($product->don_gia_ban-$product->giam_gia, 0, ',', '.') }} VNĐ</span>
+                                    <span class="tp-product-details-price old-price">{{ number_format($product->don_gia_ban, 0, ',', '.') }} VNĐ</span>
                                 </div>
 
                                 <!-- variations -->
