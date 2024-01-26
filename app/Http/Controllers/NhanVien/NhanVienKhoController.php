@@ -17,12 +17,12 @@ class NhanVienKhoController extends Controller
 {
     public function index()
     {
-        session(['User' => 'NhanVienKho', 'MNV' => 'NV01']);
+        session(['User' => 'NhanVienKho']);
         $myHDN =  DB::table('hoa_don_nhaps')
                 ->join('nhan_viens', 'nhan_viens.ma_nhan_vien', '=', 'hoa_don_nhaps.ma_nhan_vien')
                 ->join('nha_cung_caps', 'nha_cung_caps.ma_nha_cung_cap', '=', 'hoa_don_nhaps.ma_nha_cung_cap')
                 ->select('hoa_don_nhaps.*', 'nha_cung_caps.*', 'nhan_viens.*')
-                ->where('hoa_don_nhaps.ma_nhan_vien', '=', session('MNV'));
+                ->where('hoa_don_nhaps.ma_nhan_vien', '=', session()->get('userInfo')->ma_nhan_vien);
 
         if(isset(request()->Key_NVKHoaDonNhap))
         {
