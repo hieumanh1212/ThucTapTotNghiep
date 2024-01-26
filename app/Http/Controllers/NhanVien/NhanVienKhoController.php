@@ -116,7 +116,7 @@ class NhanVienKhoController extends Controller
         return view('NhanVien.NhanVienKho.CreateHoaDonNhap',
         [
             'auto_ma_hoa_don_nhap' => $mahoadon,
-            "nhanvien" => NhanVien::find(session('MNV')),
+            "nhanvien" => NhanVien::find(session()->get('userInfo')->ma_nhan_vien),
             'nhacungcap' => NhaCungCap::all(),
             'sanpham' => SanPham::all(),
             'ngaynhap' => $ngaynhap,
