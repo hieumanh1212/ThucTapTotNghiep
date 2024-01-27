@@ -183,12 +183,7 @@
                                        </span>
                                             </div>
                                         </div>
-                                        <div class="tp-product-details-add-to-cart mb-15 w-100">
-                                            <button class="tp-product-details-add-to-cart-btn w-100"
-                                                    onclick="addToCart('{{$product->ma_san_pham}}',{{$sizes}},{{$colors}},{{$product->don_gia_ban-$product->giam_gia}})">
-                                                Thêm vào giỏ hàng
-                                            </button>
-                                        </div>
+                                        
                                     </div>
                                     <button class="tp-product-details-buy-now-btn w-100" onclick="addToCart('{{$product->ma_san_pham}}',{{$sizes}},{{$colors}},{{$product->don_gia_ban-$product->giam_gia}})">Thêm vào giỏ hàng</button>
                                 </div>
