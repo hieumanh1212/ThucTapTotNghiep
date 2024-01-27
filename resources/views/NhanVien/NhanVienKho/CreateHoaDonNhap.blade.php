@@ -252,6 +252,7 @@
             
             selectElementSanPham.addEventListener("change", function() {
                 var selectedValueSanPham = selectElementSanPham.value;
+                console.log(selectedValueSanPham)
                 if(document.querySelector("select[name='ma_nha_cung_cap']").value != '')
                     window.location.href = NewURL({ma_san_pham:selectedValueSanPham, ma_nha_cung_cap:document.querySelector("select[name='ma_nha_cung_cap']").value}, [], url);
                 
