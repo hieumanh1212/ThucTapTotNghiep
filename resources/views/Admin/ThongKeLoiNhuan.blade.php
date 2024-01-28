@@ -40,7 +40,7 @@
                             Đã bán được</div>
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
-                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="soluongdabanquy1">{{ $soluongdabanquy1_hientai }}%</div>
+                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="soluongdabanquy1">{{ round($soluongdabanquy1_hientai, 2) }}%</div>
                             </div>
                             <div class="col">
                                 <div class="progress progress-sm mr-2">
@@ -76,7 +76,7 @@
                             Đã bán được</div>
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
-                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="soluongdabanquy2">{{ $soluongdabanquy2_hientai }}%</div>
+                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="soluongdabanquy2">{{ round($soluongdabanquy2_hientai, 2) }}%</div>
                             </div>
                             <div class="col">
                                 <div class="progress progress-sm mr-2">
@@ -112,7 +112,7 @@
                             Đã bán được</div>
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
-                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="soluongdabanquy3">{{ $soluongdabanquy3_hientai }}%</div>
+                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="soluongdabanquy3">{{ round($soluongdabanquy3_hientai, 2) }}%</div>
                             </div>
                             <div class="col">
                                 <div class="progress progress-sm mr-2">
@@ -147,7 +147,7 @@
                             Đã bán được</div>
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
-                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="soluongdabanquy4">{{ $soluongdabanquy4_hientai }}%</div>
+                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="soluongdabanquy4">{{ round($soluongdabanquy4_hientai, 2) }}%</div>
                             </div>
                             <div class="col">
                                 <div class="progress progress-sm mr-2">

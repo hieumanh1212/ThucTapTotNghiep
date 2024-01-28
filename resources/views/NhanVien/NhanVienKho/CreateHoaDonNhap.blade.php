@@ -240,7 +240,7 @@
 @endsection
 @section('js')
     <script>
-
+        
         if ('{{ request()->ma_nha_cung_cap }}' != '' || '{{ request()->ma_nhan_vien }}'!='' )
         {
             // Sử dụng hàm scrollIntoView để cuộn trang đến phần tử mục tiêu.
