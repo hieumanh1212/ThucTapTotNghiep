@@ -221,7 +221,7 @@ class NhanVienController extends Controller
             $olddata = TaiKhoan::find($manhanVien.'@gmail.com');
             $olddata->mat_khau = Hash::make('123456');
             $olddata->save();
-            return redirect()->route('Admin.NhanVien.show', $manhanVien)->with('CapNhapMatKhau_ThanhCong', 'Nhập nhật mật khẩu thành công!');
+            return redirect()->route('Admin.NhanVien.show', $manhanVien)->with('CapNhapMatKhau_ThanhCong', 'Cập nhật mật khẩu thành công!');
         }
         
     }
