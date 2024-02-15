@@ -465,7 +465,7 @@
                             </div>
                             <div class="tp-instagram-banner-content">
                                 <span>Theo dõi chúng tôi trên</span>
-                                <a href="https://www.instagram.com/tvhungpv/">Instagram</a>
+                                <a href="#">Instagram</a>
                             </div>
                         </div>
                     </div>
