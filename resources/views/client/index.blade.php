@@ -301,7 +301,8 @@
         <!-- product area end -->
 
         <!-- trending area start -->
-        <section class="tp-trending-area pt-5 pb-50">
+        
+        <!-- <section class="tp-trending-area pt-5 pb-50">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-6">
@@ -374,7 +375,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+        
         <!-- trending area end -->
 
         <!-- blog area start -->
